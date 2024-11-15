@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Formulario de Naturaleza y Gatos</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Amor por la Naturaleza y los Gatos</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Este formulario es para conocer si te gusta la naturaleza y los gatos.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" placeholder="tugato@correo.com" required>
+
+                <label for="gatos">¿Te gustan los gatos?:</label>
+                <select id="gatos" required>
+                    <option>Los AMOO</option>
+                    <option>Si me gustan</option>
+                    <option>Poco me gustan</option>
+                    <option>No me gustan</option>
+                </select>
+                <label for="gatos-adopcion">¿Adoptarias un gato?:</label>
+                <select id="gatos-adopcion" required>
+                    <option>Si</option>
+                    <option>No</option>
+
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="Comparte tus gatos, perdón tus gustos :D" required></textarea>
+                
+                <fieldset>
+                    <legend>Género</legend>
+                    <label for="genero-masculino">Masculino</label>
+                    <input type="radio" name="genero" id="genero-masculino">
+
+                    <label for="genero-femenino">Femenino</label>
+                    <input type="radio" name="genero" id="genero-femenino">
+
+                    <label for="genero-otro">Otro</label>
+                    <input type="radio" name="genero" id="genero-otro">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <label for="intereses-gatos">Gatos</label>
+                    <input type="checkbox" name="gatos" id="intereses-gatos">
+
+                    <label for="intereses-bosques">Explorar bosques</label>
+                    <input type="checkbox" name="bosques" id="intereses-bosques">
+
+                    <label for="intereses-jardin">Jardinería</label>
+                    <input type="checkbox" name="jardin" id="intereses-jardin">
+
+                    <label for="intereses-fotografia">Fotografía de la naturaleza</label>
+                    <input type="checkbox" name="fotografia" id="intereses-fotografia">
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 T. Itzel Guzman Tellez. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
