@@ -21,7 +21,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 1em;     /*espacion entre elementos de un grid */
 }
 
 nav a {
@@ -31,6 +31,7 @@ nav a {
 
 main {
     padding: 1em;
+    margin: 100px;
 }
 
 form {
